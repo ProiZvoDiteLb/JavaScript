@@ -15,7 +15,6 @@ body {
 
 .section {
   padding-top: 196px;
-  padding-left: 120px;
   background: url(img/topback.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -129,7 +128,6 @@ span {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
-  padding-bottom: 96px;
 }
 .game {
   display: flex;
@@ -153,4 +151,82 @@ span {
   border-radius: 52px;
   width: 111px;
   height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+}
+.games__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.carts {
+  flex-wrap: wrap;
+  padding-top: 72px;
+}
+.gamess {
+}
+.gamess__revers {
+}
+.gamess__color {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.gamess__colors {
+  display: flex;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.gamess__img {
+  display: flex;
+  grid-column: span 6;
+  background-color: white;
+  border-radius: 30px 0 0 30px;
+  border-radius: 30px;
+  width: 600px;
+  height: 500px;
+}
+.gamess__position {
+  padding-left: 48px;
+  padding-top: 48px;
+}
+.gamess__positions {
+  padding-left: 48px;
+  padding-top: 48px;
+}
+.gamess__block {
+  display: flex;
+  flex-direction: column;
+}
+.gamess__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+}
+.gamess__paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+.gamess__btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  width: 247px;
+  height: 66px;
+  background-color: black;
+  border: none;
+  border-radius: 60px;
+  color: #ffffff;
+}
+
+.gamess__row {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
