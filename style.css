@@ -7,6 +7,7 @@ body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #202027;
 }
 .center {
   padding-left: calc(50% - 600px);
@@ -99,9 +100,9 @@ span {
   line-height: 110.00000000000001%;
   color: black;
 }
-.sections {
+/* .sections {
   background-color: #202027;
-}
+} */
 
 .sections__games {
   padding-top: 94px;
@@ -229,4 +230,14 @@ span {
 .gamess__row {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.footer {
+  margin-top: 112px;
+}
+.footer__block {
+  display: flex;
+  justify-content: center;
+  padding-top: 61px;
+  padding-bottom: 60px;
+  background-color: #bded35;
 }
