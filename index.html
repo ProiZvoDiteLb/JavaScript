@@ -20,6 +20,9 @@
   </head>
   <body>
     <div class="topback">
+      <!-- <div class="star">
+        <div><img src="./img/topbackStar.png" alt="" /></div>
+      </div> -->
       <section class="section center">
         <div class="section__modifier">
           <h1 class="section__heading">
@@ -30,7 +33,7 @@
             Если готов, нажимай <span>«Поехали!»</span> и
             <span>приступай</span>.
           </p>
-          <a href="#" class="section__link"
+          <a href="#anchor1" class="section__link"
             ><button class="section__button">Поехали!</button></a
           >
         </div>
@@ -89,7 +92,7 @@
       </header>
     </div>
     <section class="sections center">
-      <div class="sections__games">
+      <div id="anchor1" class="sections__games">
         <h2 class="sections__heading">Об играх</h2>
         <p class="sections__paragraph">
           В моей коллекции представлено 6 игр на разные темы. <br />
@@ -100,78 +103,93 @@
 
       <div class="cart">
         <div class="game">
-          <div class="games game__one">
-            <div class="games__img">
-              <img src="./img/Guess the number.svg" alt="picter_game" />
+          <a href="#game1"
+            ><div class="games game__one">
+              <div class="games__img">
+                <img src="./img/Guess the number.svg" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 1</p></button>
+                <h2 class="games__title">Угадай число</h2>
+              </div>
             </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 1</p></button>
-              <h2 class="games__title">Угадай число</h2>
+          </a>
+
+          <a href="#game4">
+            <div class="games game__two">
+              <div class="games__img">
+                <img src="./img/Rock, scissors, paper.png" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 4</p></button>
+                <h2 class="games__title">
+                  Камень, <br />
+                  ножницы, <br />
+                  бумага
+                </h2>
+              </div>
             </div>
-          </div>
-          <div class="games game__two">
-            <div class="games__img">
-              <img src="./img/Rock, scissors, paper.png" alt="picter_game" />
-            </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 4</p></button>
-              <h2 class="games__title">
-                Камень, <br />
-                ножницы, <br />
-                бумага
-              </h2>
-            </div>
-          </div>
+          </a>
         </div>
         <div class="game">
-          <div class="games game__three">
-            <div class="games__img">
-              <img src="./img/Simple arithmetic.svg" alt="picter_game" />
+          <a href="#game2">
+            <div class="games game__three">
+              <div class="games__img">
+                <img src="./img/Simple arithmetic.svg" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 2</p></button>
+                <h2 class="games__title">
+                  Простая <br />
+                  арифметика
+                </h2>
+              </div>
             </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 2</p></button>
-              <h2 class="games__title">
-                Простая <br />
-                арифметика
-              </h2>
+          </a>
+
+          <a href="#game5">
+            <div class="games game__three">
+              <div class="games__img">
+                <img src="./img/A simple quiz.svg" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 5</p></button>
+                <h2 class="games__title">
+                  Простая <br />
+                  викторина
+                </h2>
+              </div>
             </div>
-          </div>
-          <div class="games game__three">
-            <div class="games__img">
-              <img src="./img/A simple quiz.svg" alt="picter_game" />
-            </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 5</p></button>
-              <h2 class="games__title">
-                Простая <br />
-                викторина
-              </h2>
-            </div>
-          </div>
+          </a>
         </div>
         <div class="game">
-          <div class="games game__one">
-            <div class="games__img">
-              <img src="./img/Turn the text over.svg" alt="picter_game" />
+          <a href="#game3">
+            <div class="games game__one">
+              <div class="games__img">
+                <img src="./img/Turn the text over.svg" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 3</p></button>
+                <h2 class="games__title">Переверни текст</h2>
+              </div>
             </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 3</p></button>
-              <h2 class="games__title">Переверни текст</h2>
+          </a>
+
+          <a href="#game6">
+            <div class="games game__two">
+              <div class="games__img">
+                <img src="./img/Random Color Generator.svg" alt="picter_game" />
+              </div>
+              <div class="games__position">
+                <button class="games__btn"><p>Игра № 6</p></button>
+                <h2 class="games__title">
+                  Генератор <br />
+                  случайных <br />
+                  цветов
+                </h2>
+              </div>
             </div>
-          </div>
-          <div class="games game__two">
-            <div class="games__img">
-              <img src="./img/Random Color Generator.svg" alt="picter_game" />
-            </div>
-            <div class="games__position">
-              <button class="games__btn"><p>Игра № 6</p></button>
-              <h2 class="games__title">
-                Генератор <br />
-                случайных <br />
-                цветов
-              </h2>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -188,7 +206,7 @@
                     alt="picter_game"
                   />
                 </div>
-                <div class="gamess__position">
+                <div id="game1" class="gamess__position">
                   <div class="gamess__block">
                     <h2 class="gamess__title">Угадай число</h2>
                     <p class="gamess__paragraph">
@@ -208,7 +226,7 @@
                     alt="picter_game"
                   />
                 </div>
-                <div class="gamess__positions">
+                <div id="game2" class="gamess__positions">
                   <div class="gamess__block">
                     <h2 class="gamess__title">
                       Простая <br />
@@ -231,7 +249,7 @@
                     alt="picter_game"
                   />
                 </div>
-                <div class="gamess__position">
+                <div id="game3" class="gamess__position">
                   <div class="gamess__block">
                     <h2 class="gamess__title">Переверни текст</h2>
                     <p class="gamess__paragraph">
@@ -248,7 +266,7 @@
                 <div class="gamess__img">
                   <img src="./img/A simple quiz 30px.svg" alt="picter_game" />
                 </div>
-                <div class="gamess__positions">
+                <div id="game5" class="gamess__positions">
                   <div class="gamess__block">
                     <h2 class="gamess__title">Викторина</h2>
                     <p class="gamess__paragraph">
@@ -268,7 +286,7 @@
                     alt="picter_game"
                   />
                 </div>
-                <div class="gamess__position">
+                <div id="game4" class="gamess__position">
                   <div class="gamess__block">
                     <h2 class="gamess__title">
                       Камень, <br />
@@ -292,7 +310,7 @@
                     alt="picter_game"
                   />
                 </div>
-                <div class="gamess__positions">
+                <div id="game6" class="gamess__positions">
                   <div class="gamess__block">
                     <h2 class="gamess__title">
                       Генератор <br />
