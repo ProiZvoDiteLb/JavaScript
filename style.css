@@ -118,6 +118,9 @@ span {
   vertical-align: middle;
   color: #ffffff;
 }
+.sections__heading_position {
+  padding-bottom: 72px;
+}
 .sections__paragraph {
   font-weight: 400;
   font-size: 24px;
@@ -194,11 +197,6 @@ a {
   line-height: 100%;
 }
 
-.carts {
-  flex-wrap: wrap;
-  padding-top: 72px;
-}
-
 .gamess__color {
   display: flex;
   flex-direction: row-reverse;
@@ -219,6 +217,7 @@ a {
   border-radius: 30px;
   width: 600px;
   height: 500px;
+  overflow: hidden;
 }
 .gamess__position {
   padding-left: 48px;
