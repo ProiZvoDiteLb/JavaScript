@@ -285,20 +285,20 @@ a {
     width: 247px;
     height: 66px;
     background-color: black;
-    border: none;
     border-radius: 60px;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border: none;
+    box-sizing: border-box;
   }
   &__btn:hover {
     border: solid 0.5mm #000000;
     background-color: rgb(255, 255, 255);
     color: #000000;
     transition-duration: 0.5s;
-    
+    cursor: pointer;
   }
 
   &__row {
