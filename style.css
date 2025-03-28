@@ -39,20 +39,19 @@ body {
   line-height: 32px;
 }
 .section__link {
-  padding-bottom: 156px;
+  color: white;
   font-weight: 600;
   font-size: 24px;
   line-height: 142%;
-}
-.section__button {
-  font-weight: 600;
-  font-size: 24px;
   width: 247px;
   height: 66px;
   border-radius: 60px;
   background-color: black;
-  color: white;
   border: none;
+  margin-bottom: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section__button:hover {
   background-color: rgb(255, 255, 255);
@@ -97,6 +96,10 @@ span {
 .star {
   width: 36px;
   height: 36px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .name {
@@ -182,6 +185,9 @@ a {
   gap: 16px;
 }
 .games__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f7f7f7;
   border: none;
   border-radius: 52px;
@@ -253,6 +259,9 @@ a {
   border: none;
   border-radius: 60px;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gamess__btn:hover {
   border: solid 0.5mm #000000;
