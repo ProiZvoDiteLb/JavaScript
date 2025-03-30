@@ -53,7 +53,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.section__button:hover {
+.section__link:hover {
   background-color: rgb(255, 255, 255);
   color: black;
   transition-duration: 0.9s;
