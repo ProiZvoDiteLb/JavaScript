@@ -30,6 +30,7 @@ body {
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
+    max-width: 769px;
   }
 
   &__paragraph {
@@ -37,6 +38,7 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+    max-width: 720px;
   }
   // &__link {
   //   padding-bottom: 156px;
@@ -155,6 +157,7 @@ img {
     color: #ffffff;
     padding-top: 24px;
     padding-bottom: 72px;
+    max-width: 788px;
   }
 }
 
@@ -250,8 +253,6 @@ a {
     background-color: white;
     border-radius: 30px 0 0 30px;
     border-radius: 30px;
-    width: 600px;
-    height: 500px;
     overflow: hidden;
   }
   &__position {
@@ -318,3 +319,5 @@ a {
     background-color: #bded35;
   }
 }
+
+@import "mobile_index";
