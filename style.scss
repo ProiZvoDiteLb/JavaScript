@@ -104,7 +104,11 @@ span {
   width: 36px;
   height: 36px;
 }
-img {
+.stars__img {
+  display: flex;
+}
+.games__img img,
+.gamess__img img {
   max-width: 100%;
 }
 .name {
@@ -304,7 +308,7 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .mobile__link {
+  .section__link_mobile {
     display: none;
   }
 }

@@ -100,7 +100,12 @@ span {
   height: 36px;
 }
 
-img {
+.stars__img {
+  display: flex;
+}
+
+.games__img img,
+.gamess__img img {
   max-width: 100%;
 }
 
@@ -290,7 +295,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .mobile__link {
+  .section__link_mobile {
     display: none;
   }
 }
@@ -376,11 +381,11 @@ a {
     padding-left: 0;
     padding: 29px;
   }
-  .desktop__link {
+  .section__link_desktop {
     display: none;
   }
-  .mobile-link {
-    display: inline-block;
+  .section__link_mobile {
+    display: flex;
   }
   .gamess__btn:hover {
     border: solid 0.5mm #ffffff;
