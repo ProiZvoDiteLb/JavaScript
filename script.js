@@ -35,7 +35,7 @@ alert(result);
 // console.log(result);
 
 // Задание 6 //
-let a = 9;
+let c = 9;
 let b = 2;
 alert(a % b);
 // console.log(a % b);
@@ -52,6 +52,8 @@ alert(num);
 // console.log(num);
 
 // Задание 8 //
+let age = prompt("Сколько вам лет?");
+alert(age);
 
 // Задание 9 //
 
