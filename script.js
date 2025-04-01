@@ -38,7 +38,7 @@ alert(result);
 let c = 9;
 let b = 2;
 alert(a % b);
-// console.log(a % b);
+// console.log(c % b);
 
 // Задание 7 //
 let num = 1;
@@ -54,8 +54,23 @@ alert(num);
 // Задание 8 //
 let age = prompt("Сколько вам лет?");
 alert(age);
+// console.log(age);
 
 // Задание 9 //
+let user = {
+  name: "Игорь",
+  age: 34,
+  isAdmin: true,
+};
+alert(
+  "Имя: " +
+    user.name +
+    ", возраст: " +
+    user.age +
+    " года," +
+    " администратор: " +
+    user.isAdmin
+);
 
 // Задание 10 //
 
