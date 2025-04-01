@@ -8,15 +8,21 @@ alert(a);
 
 // Задание 2 //
 let releaseYear = 2007;
-alert(releaseYear);
+alert("Дата выхода первого iphone: " + releaseYear + " год");
 // console.log(releaseYear);
 
 // Задание 3 //
 let creatorName = "Брендан Эйх";
-alert(creatorName);
+alert("Именя создателя языка JavaScript: " + creatorName);
 // console.log(creatorName);
 
 // Задание 4 //
+let num1 = 10;
+let num2 = 2;
+alert("sum: " + (num1 + num2)); // Сумма
+alert("difference: " + (num1 - num2)); // Разность
+alert("product: " + num1 * num2); // Произведение
+alert("quotient: " + num1 / num2); // Частное
 
 // Задание 5 //
 
