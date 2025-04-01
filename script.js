@@ -23,6 +23,10 @@ alert("sum: " + (num1 + num2)); // Сумма
 alert("difference: " + (num1 - num2)); // Разность
 alert("product: " + num1 * num2); // Произведение
 alert("quotient: " + num1 / num2); // Частное
+// console.log(num1 + num2);
+// console.log(num1 - num2);
+// console.log(num1 * num2);
+// console.log(num1 / num2);
 
 // Задание 5 //
 let result = 2;
@@ -31,6 +35,10 @@ alert(result);
 // console.log(result);
 
 // Задание 6 //
+let a = 9;
+let b = 2;
+alert(a % b);
+// console.log(a % b);
 
 // Задание 7 //
 
