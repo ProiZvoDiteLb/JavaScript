@@ -25,6 +25,10 @@ alert("product: " + num1 * num2); // Произведение
 alert("quotient: " + num1 / num2); // Частное
 
 // Задание 5 //
+let result = 2;
+result = 2 ** 5;
+alert(result);
+// console.log(result);
 
 // Задание 6 //
 
