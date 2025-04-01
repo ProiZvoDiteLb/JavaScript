@@ -10,3 +10,24 @@ alert(a);
 let releaseYear = 2007;
 alert(releaseYear);
 // console.log(releaseYear);
+
+// Задание 3 //
+let creatorName = "Брендан Эйх";
+alert(creatorName);
+// console.log(creatorName);
+
+// Задание 4 //
+
+// Задание 5 //
+
+// Задание 6 //
+
+// Задание 7 //
+
+// Задание 8 //
+
+// Задание 9 //
+
+// Задание 10 //
+
+// Задание доп //
