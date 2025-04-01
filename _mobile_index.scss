@@ -58,6 +58,10 @@
     padding-top: 16px;
     padding-bottom: 32px;
     line-height: normal;
+    max-width: 272px;
+  }
+  .gamess__paragraph_br br {
+    display: none;
   }
   .gamess__block {
     display: flex;
@@ -79,5 +83,19 @@
   .gamess__positions {
     padding-left: 0;
     padding: 29px;
+  }
+
+  .desktop__link {
+    display: none;
+  }
+  .mobile-link {
+    display: inline-block;
+  }
+  .gamess__btn:hover {
+    border: solid 0.5mm #ffffff;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transition-duration: 0.5s;
+    cursor: pointer;
   }
 }

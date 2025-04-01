@@ -40,23 +40,6 @@ body {
     line-height: 32px;
     max-width: 720px;
   }
-  // &__link {
-  //   padding-bottom: 156px;
-  //   font-weight: 600;
-  //   font-size: 24px;
-  //   line-height: 142%;
-  // }
-
-  // &__button {
-  //   font-weight: 600;
-  //   font-size: 24px;
-  //   width: 247px;
-  //   height: 66px;
-  //   border-radius: 60px;
-  //   background-color: black;
-  //   color: white;
-  //   border: none;
-  // }
   &__link {
     color: white;
     font-weight: 600;
@@ -278,6 +261,7 @@ a {
     line-height: 32px;
     padding-top: 24px;
     padding-bottom: 36px;
+    max-width: 464px;
   }
   &__btn {
     font-weight: 600;
@@ -317,6 +301,11 @@ a {
     padding-top: 61px;
     padding-bottom: 60px;
     background-color: #bded35;
+  }
+}
+@media (min-width: 768px) {
+  .mobile__link {
+    display: none;
   }
 }
 
