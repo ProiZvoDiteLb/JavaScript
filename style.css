@@ -132,7 +132,7 @@ span {
 }
 
 .sections__games {
-  padding-top: 94px;
+  padding-top: 98px;
   position: relative;
 }
 .sections__heading {
@@ -147,7 +147,7 @@ span {
   align-items: center;
 }
 .sections__heading_position {
-  padding-bottom: 72px;
+  padding-bottom: 70px;
 }
 .sections__starHeading {
   position: absolute;
@@ -245,7 +245,7 @@ a {
 .games__title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 117%;
 }
 
 .gamess__color {
@@ -270,11 +270,11 @@ a {
 }
 .gamess__position {
   padding-left: 48px;
-  padding-top: 48px;
+  padding-top: 52px;
 }
 .gamess__positions {
   padding-left: 48px;
-  padding-top: 48px;
+  padding-top: 55px;
 }
 .gamess__block {
   display: flex;
@@ -283,15 +283,18 @@ a {
 .gamess__title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 116%;
 }
 .gamess__paragraph {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  padding-top: 24px;
-  padding-bottom: 36px;
-  max-width: 464px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  max-width: 438px;
+}
+.gamess__paragraph_br {
+  max-width: 490px;
 }
 .gamess__btn {
   font-weight: 600;

@@ -135,7 +135,7 @@ span {
   //   background-color: #202027;
 
   &__games {
-    padding-top: 94px;
+    padding-top: 98px;
     position: relative;
   }
   &__heading {
@@ -150,7 +150,7 @@ span {
     align-items: center;
   }
   &__heading_position {
-    padding-bottom: 72px;
+    padding-bottom: 70px;
   }
   &__starHeading {
     position: absolute;
@@ -250,7 +250,7 @@ a {
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 117%;
   }
 }
 
@@ -281,11 +281,11 @@ a {
   }
   &__position {
     padding-left: 48px;
-    padding-top: 48px;
+    padding-top: 52px;
   }
   &__positions {
     padding-left: 48px;
-    padding-top: 48px;
+    padding-top: 55px;
   }
   &__block {
     display: flex;
@@ -294,15 +294,18 @@ a {
   &__title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 100%;
+    line-height: 116%;
   }
   &__paragraph {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    padding-top: 24px;
-    padding-bottom: 36px;
-    max-width: 464px;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    max-width: 438px;
+  }
+  &__paragraph_br {
+    max-width: 490px;
   }
   &__btn {
     font-weight: 600;
