@@ -37,7 +37,7 @@ alert(result);
 // Задание 6 //
 let c = 9;
 let b = 2;
-alert(a % b);
+alert(с % b);
 // console.log(c % b);
 
 // Задание 7 //
