@@ -89,13 +89,20 @@
 
 //__Задание 3__//
 
-let d = Number(prompt("Введите число d"));
-let e = Number(prompt("Введите число e"));
+// let d = Number(prompt("Введите число d"));
+// let e = Number(prompt("Введите число e"));
 
-if (d > 100 || e > 100) {
-  alert("верно");
-  //   console.log("верно");
-} else {
-  alert("неверно");
-  //   console.log("неверно");
-}
+// if (d > 100 || e > 100) {
+//   alert("верно");
+//   //   console.log("верно");
+// } else {
+//   alert("неверно");
+//   //   console.log("неверно");
+// }
+
+//__Задание 4__//
+
+// let a = "2";
+// let b = "3";
+// // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
+// alert(Number(a) + Number(b));
