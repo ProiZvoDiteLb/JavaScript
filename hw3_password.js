@@ -150,10 +150,37 @@
 //   // console.log("Вы ввели не число");
 // } else {
 //   if (number % 2 === 0) {
-//     alert("Число четное");
-//     // console.log("Число четное");
+//     alert("Число " + number + " четное");
+//     // console.log("Число " + number + " четное");
 //   } else {
-//     alert("Число нечетное");
-//     // console.log("Число нечетное");
+//     alert("Число " + number + " не четное");
+//     // console.log("Число " + number + "не четное");
 //   }
+// }
+
+//__ДОП Задание 2__//
+
+// let clientOS = 0;
+// if (clientOS === 0) {
+//   alert("Установите версию для iOS");
+//   // console.log("Установите версию для iOS");
+// } else if (clientOS === 1) {
+//   alert("Установите версию для Android");
+//   // console.log("Установите версию для Android");
+// } else {
+//   alert("Неизвестная операционная система");
+// }
+
+// let clientOS = 0;
+// switch (clientOS) {
+//   case 0:
+//     alert("Установите версию для iOS");
+//     // console.log("Установите версию для iOS");
+//     break;
+//   case 1:
+//     alert("Установите версию для Android");
+//     // console.log("Установите версию для Android");
+//     break;
+//   default:
+//     alert("Неизвестная операционная система");
 // }
