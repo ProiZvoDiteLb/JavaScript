@@ -24,6 +24,26 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
+}
+.section__topback_mobile, .section__starLeft_mobile, .section__starRight_mobile {
+  display: none;
+}
+.section__topback_mobile {
+  right: 0;
+  top: 0;
+}
+.section__starLeft_mobile {
+  left: 0;
+  top: 0;
+  padding-left: 37px;
+  padding-top: 64px;
+}
+.section__starRight_mobile {
+  right: 0;
+  bottom: 0;
+  padding-right: 34px;
+  padding-bottom: 28px;
 }
 .section__modifier {
   display: flex;
@@ -367,8 +387,7 @@ a {
     font-size: 40px;
     line-height: 123%;
   }
-  .section__paragraph,
-  span {
+  .section__paragraph {
     font-size: 16px;
     line-height: 121%;
     padding-bottom: 37px;
@@ -380,6 +399,15 @@ a {
     height: 55px;
     line-height: 123%;
     margin-bottom: 131px;
+  }
+  .section__topback_mobile, .section__starLeft_mobile, .section__starRight_mobile {
+    display: block;
+    position: absolute;
+  }
+  span {
+    font-size: 16px;
+    line-height: 121%;
+    padding-bottom: 37px;
   }
   .sections__heading_none,
   .sections__paragraph,

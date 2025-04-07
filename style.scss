@@ -23,6 +23,29 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
+
+  &__topback_mobile,
+  &__starLeft_mobile,
+  &__starRight_mobile {
+    display: none;
+  }
+  &__topback_mobile {
+    right: 0;
+    top: 0;
+  }
+  &__starLeft_mobile {
+    left: 0;
+    top: 0;
+    padding-left: 37px;
+    padding-top: 64px;
+  }
+  &__starRight_mobile {
+    right: 0;
+    bottom: 0;
+    padding-right: 34px;
+    padding-bottom: 28px;
+  }
 
   &__modifier {
     display: flex;
