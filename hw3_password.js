@@ -68,21 +68,34 @@
 //   alert("неверно, число отрицательное");
 // }
 
-let c = Number(prompt("Введите число"));
-switch (true) {
-  case c > 0 && c < 10:
-    alert("верно");
-    // console.log("верно");
-    break;
-  case c === 0 || c === 10:
-    alert("неверно, число равно 0 или 10");
-    // console.log("неверно, число равно 0 или 10");
-    break;
-  case c < 0:
-    alert("неверно, число отрицательное");
-    // console.log("неверно, число отрицательное");
-    break;
-  default:
-    alert(" неверено");
-  // console.log("неверено");
+// let c = Number(prompt("Введите число"));
+// switch (true) {
+//   case c > 0 && c < 10:
+//     alert("верно");
+//     // console.log("верно");
+//     break;
+//   case c === 0 || c === 10:
+//     alert("неверно, число равно 0 или 10");
+//     // console.log("неверно, число равно 0 или 10");
+//     break;
+//   case c < 0:
+//     alert("неверно, число отрицательное");
+//     // console.log("неверно, число отрицательное");
+//     break;
+//   default:
+//     alert(" неверено");
+//   // console.log("неверено");
+// }
+
+//__Задание 3__//
+
+let d = Number(prompt("Введите число d"));
+let e = Number(prompt("Введите число e"));
+
+if (d > 100 || e > 100) {
+  alert("верно");
+  //   console.log("верно");
+} else {
+  alert("неверно");
+  //   console.log("неверно");
 }
