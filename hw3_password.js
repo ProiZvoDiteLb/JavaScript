@@ -106,3 +106,39 @@
 // let b = "3";
 // // Код выше изменять менять нельзя. Чтобы решить задачу исправьте код ниже:
 // alert(Number(a) + Number(b));
+
+//__Задание 5__//
+
+let monthNumber = prompt("Введите номер месяца");
+
+switch (monthNumber) {
+  case "12":
+  case "1":
+  case "2":
+    alert("Зима");
+    // console.log("Зима");
+    break;
+  case "3":
+  case "4":
+  case "5":
+    alert("Весна");
+    // console.log("Весна");
+    break;
+  case "6":
+  case "7":
+  case "8":
+    alert("Лето");
+    // console.log("Лето");
+    break;
+  case "9":
+  case "10":
+  case "11":
+    alert("Осень");
+    // console.log("Осень");
+    break;
+  default:
+    alert("неверно");
+  // console.log("неверно");
+}
+
+//__ДОП Задание 1__//
