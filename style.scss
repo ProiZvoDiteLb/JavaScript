@@ -12,6 +12,7 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  position: relative;
 }
 
 .section {
@@ -25,26 +26,10 @@ body {
   overflow-y: hidden;
   position: relative;
 
-  &__topback_mobile,
-  &__starLeft_mobile,
-  &__starRight_mobile {
+  &__topbackMobile,
+  &__starLeftMobile,
+  &__starRightMobile {
     display: none;
-  }
-  &__topback_mobile {
-    right: 0;
-    top: 0;
-  }
-  &__starLeft_mobile {
-    left: 0;
-    top: 0;
-    padding-left: 37px;
-    padding-top: 64px;
-  }
-  &__starRight_mobile {
-    right: 0;
-    bottom: 0;
-    padding-right: 34px;
-    padding-bottom: 28px;
   }
 
   &__modifier {
@@ -159,7 +144,6 @@ span {
 
   &__games {
     padding-top: 98px;
-    position: relative;
   }
   &__heading {
     font-weight: 700;
@@ -177,24 +161,24 @@ span {
   }
   &__starHeading {
     position: absolute;
-    right: -120px;
-    top: 109px;
+    right: 0;
+    top: 111px;
     z-index: -1;
   }
   &__starHeadingLeft {
     position: absolute;
-    left: -80px;
-    top: 750px;
+    left: -95px;
+    top: 770px;
   }
   &__starHeadingRight {
     position: absolute;
-    top: 110px;
-    padding-left: calc(1% - -1156px);
+    top: 143px;
+    padding-left: calc(1% - -1145px);
   }
   &__starHeadingFooter {
     position: absolute;
-    padding-left: calc(1% + 1156px);
-    bottom: -50px;
+    padding-left: calc(1% + 1117px);
+    bottom: -67px;
   }
 
   &__paragraph {
@@ -252,10 +236,10 @@ a {
   border-radius: 30px;
 
   &__position {
-    padding: 32px 36px;
+    padding: 29px 32px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 13px;
   }
   &__btn {
     display: flex;
@@ -264,7 +248,7 @@ a {
     background-color: #f7f7f7;
     border: none;
     border-radius: 52px;
-    width: 111px;
+    width: 108px;
     height: 36px;
     font-weight: 500;
     font-size: 16px;
@@ -273,7 +257,7 @@ a {
   &__title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 117%;
+    line-height: 129%;
   }
 }
 
@@ -304,7 +288,7 @@ a {
   }
   &__position {
     padding-left: 48px;
-    padding-top: 52px;
+    padding-top: 55px;
   }
   &__positions {
     padding-left: 48px;
@@ -327,8 +311,11 @@ a {
     padding-bottom: 32px;
     max-width: 438px;
   }
+
   &__paragraph_br {
     max-width: 490px;
+    line-height: 143%;
+    padding-top: 29px;
   }
   &__btn {
     font-weight: 600;
@@ -360,7 +347,7 @@ a {
 }
 
 .footer {
-  margin-top: 112px;
+  margin-top: 115px;
 
   &__block {
     display: flex;
