@@ -76,19 +76,30 @@
     line-height: 121%;
     padding-bottom: 37px;
   }
-  .sections__heading_none,
-  .sections__paragraph,
-  .sections__games_none {
+  .section__topback,
+  .section__starLeft,
+  .section__starRight,
+  .sections__starHeadingRight,
+  .sections__starHeadingFooter {
     display: none;
   }
-  .sections__games {
-    padding-top: 35px;
-  }
-  .sections__heading {
-    font-size: 40px;
-  }
-  .sections__heading_position {
-    padding-bottom: 32px;
+
+  .sections {
+    &__heading_none,
+    &__paragraph,
+    &__games_none {
+      display: none;
+    }
+
+    &__games {
+      padding-top: 35px;
+    }
+    &__heading {
+      font-size: 40px;
+    }
+    &__heading_position {
+      padding-bottom: 32px;
+    }
   }
 
   .cart {
@@ -154,13 +165,6 @@
     }
   }
 
-  .section__topback,
-  .section__starLeft,
-  .section__starRight,
-  .sections__starHeadingRight,
-  .sections__starHeadingFooter {
-    display: none;
-  }
   .footer {
     margin-top: 16px;
 
