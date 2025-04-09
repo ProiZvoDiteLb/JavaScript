@@ -72,6 +72,23 @@ body {
     color: black;
     transition-duration: 0.9s;
   }
+
+  &__topback {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  &__starLeft {
+    position: absolute;
+    left: 60px;
+    top: 69px;
+  }
+  &__starRight {
+    position: absolute;
+    right: 344px;
+    bottom: 59px;
+  }
 }
 
 span {
@@ -112,22 +129,6 @@ span {
   }
 }
 
-.section__topback {
-  display: flex;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-.section__starLeft {
-  position: absolute;
-  left: 60px;
-  top: 69px;
-}
-.section__starRight {
-  position: absolute;
-  right: 344px;
-  bottom: 59px;
-}
 .games__img img,
 .gamess__img img {
   max-width: 100%;
