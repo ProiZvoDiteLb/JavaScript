@@ -68,6 +68,22 @@ body {
   color: black;
   transition-duration: 0.9s;
 }
+.section__topback {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.section__starLeft {
+  position: absolute;
+  left: 60px;
+  top: 69px;
+}
+.section__starRight {
+  position: absolute;
+  right: 344px;
+  bottom: 59px;
+}
 
 span {
   font-weight: 600;
@@ -104,25 +120,6 @@ span {
     transform: translateX(-50%);
   }
 }
-.section__topback {
-  display: flex;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.section__starLeft {
-  position: absolute;
-  left: 60px;
-  top: 69px;
-}
-
-.section__starRight {
-  position: absolute;
-  right: 344px;
-  bottom: 59px;
-}
-
 .games__img img,
 .gamess__img img {
   max-width: 100%;
@@ -417,9 +414,14 @@ a {
     line-height: 121%;
     padding-bottom: 37px;
   }
-  .sections__heading_none,
-  .sections__paragraph,
-  .sections__games_none {
+  .section__topback,
+  .section__starLeft,
+  .section__starRight,
+  .sections__starHeadingRight,
+  .sections__starHeadingFooter {
+    display: none;
+  }
+  .sections__heading_none, .sections__paragraph, .sections__games_none {
     display: none;
   }
   .sections__games {
@@ -487,13 +489,6 @@ a {
     color: #ffffff;
     transition-duration: 0.5s;
     cursor: pointer;
-  }
-  .section__topback,
-  .section__starLeft,
-  .section__starRight,
-  .sections__starHeadingRight,
-  .sections__starHeadingFooter {
-    display: none;
   }
   .footer {
     margin-top: 16px;

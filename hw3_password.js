@@ -59,16 +59,16 @@
 
 //__Задание 2__//
 
-let c = Number(prompt("Введите число"));
-if (c > 0 && c < 10) {
-  alert("верно");
-} else if (c === 0 || c === 10) {
-  alert("неверно, число равно 0 или 10");
-} else if (c < 0) {
-  alert("неверно, число отрицательное");
-}
+// let c = Number(prompt("Введите число"));
+// if (c > 0 && c < 10) {
+//   alert("верно");
+// } else if (c === 0 || c === 10) {
+//   alert("неверно, число равно 0 или 10");
+// } else if (c < 0) {
+//   alert("неверно, число отрицательное");
+// }
 
-// //упрощеный вид//
+//упрощеный вид//
 // let c = Number(prompt("Введите число"));
 // if (c >= 0 && c <= 10) {
 //   alert("верно");
@@ -147,6 +147,24 @@ if (c > 0 && c < 10) {
 //   default:
 //     alert("неверно");
 //   // console.log("неверно");
+// }
+
+//еще один вариант
+
+// let number = 1;
+
+// while (number <= 12) {
+//   if ((number >= 1 && number <= 2) || number === 12) {
+//     console.log("Зима");
+//   } else if (number >= 3 && number <= 5) {
+//     console.log("Весна");
+//   } else if (number >= 6 && number <= 8) {
+//     console.log("Лето");
+//   } else if (number >= 9 && number <= 11) {
+//     console.log("Осень");
+//   }
+
+//   number++;
 // }
 
 //__ДОП Задание 1__//
