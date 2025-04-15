@@ -15,6 +15,27 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Mini games</title>
+  <script>
+    // Функция для вывода сообщения
+    function handleClick() {
+      const number = prompt("Угадай число от 1 до 100");
+      switch (true) {
+        case number === 73:
+          alert("Вы угадали");
+          break;
+        case number >= 1 && number <= 72:
+          alert("Вы не угадали, ваше число меньше загаданного  ");
+          break;
+        case number <= 74 || number >= 100:
+          alert("Вы не угадали, ваше число больше загаданного  ");
+          break;
+        default:
+          alert("Вы ввели не число");
+
+      }
+    }
+
+  </script>
 </head>
 <body>
   <div class="topback">
@@ -248,7 +269,7 @@
                     число от 1 до 100.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn">Играть!</button>
+                  <button class="gamess__btn" onclick="handleClick()">Играть!</button>
 
                 </div>
               </div>
