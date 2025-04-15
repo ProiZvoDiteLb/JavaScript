@@ -20,18 +20,36 @@
 // если число четное; строку 'Число нечетное' , если число нечетное.
 // Подсказка: четность проверяется с помощью условия n % 2 == 0 .
 
-function CheckParity(number) {
-  if (number % 2 === 0) {
-    return "Число четное";
-  } else {
-    return "Число не четное";
-  }
-}
-console.log(CheckParity(2)); //"Число четное"
-console.log(CheckParity(3)); //"Число не четное"
-console.log(CheckParity(4)); //"Число четное"
-console.log(CheckParity(5)); //"Число не четное"
+// function CheckParity(number) {
+//   if (number % 2 === 0) {
+//     return "Число четное";
+//   } else {
+//     return "Число не четное";
+//   }
+// }
+// console.log(CheckParity(2)); //"Число четное"
+// console.log(CheckParity(3)); //"Число не четное"
+// console.log(CheckParity(4)); //"Число четное"
+// console.log(CheckParity(5)); //"Число не четное"
+
 //__Задание 3__//
+
+// Напишите функцию, которая принимает параметром число и выводит в
+// консоль квадрат этого числа. Напишите функцию, которая принимает
+// параметром число и возвращает квадрат этого числа значением — так,
+// чтобы потом это значение можно было использовать.
+
+// function squareNumber(number) {
+//   const square = number * number;
+//   console.log(square);
+// }
+// squareNumber(5);
+
+// function squareNumber(number) {
+//   return number * number;
+// }
+// const result = squareNumber(4);
+// console.log(result);
 
 //__Задание 4__//
 
