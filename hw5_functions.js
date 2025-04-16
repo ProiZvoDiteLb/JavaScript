@@ -80,21 +80,21 @@
 // 'Одно или оба значения не являются числом' . Если оба параметра — числа,
 // то возвращает произведение данных чисел.
 
-function multiplyNumbers(a, b) {
-  const num1 = Number(a);
-  const num2 = Number(b);
+// function multiplyNumbers(a, b) {
+//   const num1 = Number(a);
+//   const num2 = Number(b);
 
-  if (isNaN(num1) || isNaN(num2)) {
-    return "Одно или оба значения не являются числом";
-  }
+//   if (isNaN(num1) || isNaN(num2)) {
+//     return "Одно или оба значения не являются числом";
+//   }
 
-  return num1 * num2;
-}
-const result = multiplyNumbers(
-  prompt("Введите первое число"),
-  prompt("Введите второе число")
-);
-alert(result);
+//   return num1 * num2;
+// }
+// const result = multiplyNumbers(
+//   prompt("Введите первое число"),
+//   prompt("Введите второе число")
+// );
+// alert(result);
 
 //__Задание 6__//
 
@@ -105,5 +105,41 @@ alert(result);
 // где n — введенное число, а <получившееся значение> — число, возведенное в куб. Проверьте работу
 // функции с числами от 0 до 10 .
 
+// function numberCheck(number) {
+//   let num = Number(number);
+//   if (isNaN(num)) {
+//     return "Переданный параметр не является числом";
+//   }
+//   return number + " в кубе равняется " + num * num * num;
+// }
+// const result = numberCheck(prompt("Введите число"));
+// alert(result);
+
 //__Задание 7__//
-// тимтимти;
+
+// Создайте два объекта, circle1 и circle2 , каждый из которых имеет свойство radius .
+// Оба объекта должны иметь: Метод getArea , который возвращает площадь круга, вычисляемую через радиус.
+// Метод getPerimeter , который возвращает периметр окружности.
+
+// const circle1 = {
+//   radius: 5,
+//   getArea: function () {
+//     return Math.PI * Math.pow(this.radius, 2);
+//   },
+//   getPerimetr: function () {
+//     return 2 * Math.PI * this.radius;
+//   },
+// };
+// const circle2 = {
+//   radius: 3,
+//   getArea: function () {
+//     return Math.PI * Math.pow(this.radius, 2);
+//   },
+//   getPerimetr: function () {
+//     return 2 * Math.PI * this.radius;
+//   },
+// };
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimetr());
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimetr());
