@@ -15,27 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Mini games</title>
-  <script>
-    // Функция для вывода сообщения
-    function handleClick() {
-      const number = prompt("Угадай число от 1 до 100");
-      switch (true) {
-        case number === 73:
-          alert("Вы угадали");
-          break;
-        case number >= 1 && number <= 72:
-          alert("Вы не угадали, ваше число меньше загаданного  ");
-          break;
-        case number <= 74 || number >= 100:
-          alert("Вы не угадали, ваше число больше загаданного  ");
-          break;
-        default:
-          alert("Вы ввели не число");
 
-      }
-    }
-
-  </script>
 </head>
 <body>
   <div class="topback">
@@ -386,5 +366,32 @@
     </div>
   </footer>
   <!-- <script src="./script.js"></script> -->
+
+  <script>
+    // Функция для вывода сообщения
+
+    function handleClick() {
+      const number = Number(prompt("Угадай число от 1 до 100"));
+
+      if (isNaN(number) || number < 1 || number > 100) {
+        alert("Вы ввели не число или число вне диапазона");
+        return;
+      }
+
+      switch (true) {
+        case number === 73:
+          alert("Вы угадали");
+          break;
+        case number < 73:
+          alert("Вы не угадали, ваше число меньше загаданного");
+          break;
+        case number > 73:
+          alert("Вы не угадали, ваше число больше загаданного");
+          break;
+      }
+    }
+
+
+  </script>
 </body>
 </html>
