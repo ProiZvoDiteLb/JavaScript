@@ -110,7 +110,7 @@
 //   if (isNaN(num)) {
 //     return "Переданный параметр не является числом";
 //   }
-//   return number + " в кубе равняется " + num * num * num;
+//   return number + " в кубе равняется " + num ** 3;
 // }
 // const result = numberCheck(prompt("Введите число"));
 // alert(result);
