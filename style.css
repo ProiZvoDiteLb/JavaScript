@@ -67,7 +67,6 @@ body {
 .section__link:hover {
   background-color: rgb(255, 255, 255);
   color: black;
-  transition-duration: 0.9s;
 }
 .section__topback {
   display: flex;
