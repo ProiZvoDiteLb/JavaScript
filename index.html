@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Mini games</title>
+
 </head>
 <body>
   <div class="topback">
@@ -248,7 +249,7 @@
                     число от 1 до 100.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn">Играть!</button>
+                  <button class="gamess__btn" onclick="handleClick()">Играть!</button>
 
                 </div>
               </div>
@@ -365,5 +366,45 @@
     </div>
   </footer>
   <!-- <script src="./script.js"></script> -->
+
+  <script>
+    // Функция для вывода сообщения
+
+    function handleClick() {
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      let guessed = false;
+
+      while (!guessed) {
+        const input = prompt("Угадай число от 1 до 100 или нажмите 'Отмена' для выхода");
+
+        if (input === null) {
+          alert("Игра остановлена.");
+          break;
+        }
+
+        const number = Number(input);
+
+        if (isNaN(number) || number < 1 || number > 100) {
+          alert("Вы ввели не число или число вне диапазона");
+          continue;
+        }
+
+        switch (true) {
+          case number === randomNumber:
+            alert("Вы угадали! Игра окончена.");
+            guessed = true;
+            break;
+          case number < randomNumber:
+            alert("Ваше число меньше загаданного");
+            break;
+          case number > randomNumber:
+            alert("Ваше число больше загаданного");
+            break;
+        }
+      }
+    }
+
+
+  </script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Montserrat", serif;
@@ -66,12 +68,17 @@ body {
     justify-content: center;
     align-items: center;
   }
+  // &__btn:hover {
+  //   background-color: rgb(255, 255, 255);
+  //   color: black;
+  //   transition-duration: 0.9s;
+  // }
 
-  &__link:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    transition-duration: 0.9s;
-  }
+  // &__link:hover {
+  //   background-color: rgb(255, 255, 255);
+  //   color: black;
+  //   transition-duration: 0.9s;
+  // }
 
   &__topback {
     display: flex;
@@ -79,11 +86,13 @@ body {
     top: 0px;
     right: 0px;
   }
+
   &__starLeft {
     position: absolute;
     left: 60px;
     top: 69px;
   }
+
   &__starRight {
     position: absolute;
     right: 344px;
@@ -197,6 +206,9 @@ span {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+}
+button {
+  font-family: inherit;
 }
 a {
   text-decoration: none;
@@ -363,5 +375,5 @@ a {
     display: none;
   }
 }
-
+@import "tablet_index";
 @import "mobile_index";
