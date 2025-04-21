@@ -68,12 +68,17 @@ body {
     justify-content: center;
     align-items: center;
   }
+  // &__btn:hover {
+  //   background-color: rgb(255, 255, 255);
+  //   color: black;
+  //   transition-duration: 0.9s;
+  // }
 
-  &__link:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    transition-duration: 0.9s;
-  }
+  // &__link:hover {
+  //   background-color: rgb(255, 255, 255);
+  //   color: black;
+  //   transition-duration: 0.9s;
+  // }
 
   &__topback {
     display: flex;

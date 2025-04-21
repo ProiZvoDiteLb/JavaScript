@@ -28,7 +28,9 @@ body {
   overflow-y: hidden;
   position: relative;
 }
-.section__topbackMobile, .section__starLeftMobile, .section__starRightMobile {
+.section__topbackMobile,
+.section__starLeftMobile,
+.section__starRightMobile {
   display: none;
 }
 .section__modifier {
@@ -63,6 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.9s;
 }
 .section__link:hover {
   background-color: rgb(255, 255, 255);
@@ -469,7 +472,9 @@ a {
   .section__link_mobile {
     display: flex;
   }
-  .section__topbackMobile, .section__starLeftMobile, .section__starRightMobile {
+  .section__topbackMobile,
+  .section__starLeftMobile,
+  .section__starRightMobile {
     display: block;
     position: absolute;
   }
@@ -501,7 +506,9 @@ a {
   .sections__starHeadingFooter {
     display: none;
   }
-  .sections__heading_none, .sections__paragraph, .sections__games_none {
+  .sections__heading_none,
+  .sections__paragraph,
+  .sections__games_none {
     display: none;
   }
   .sections__games {
@@ -578,4 +585,4 @@ a {
     font-size: 16px;
     line-height: 123%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
