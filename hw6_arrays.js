@@ -174,14 +174,25 @@
 // Дан массив чисел: [1, 3, 5, 10, 20] . С помощью метода join выведите
 // элементы массива через пробел (пустую строку ' ' ).
 
-const array = [1, 3, 5, 10, 20];
-const result = array.join(" ");
-console.log(result);
+// const array = [1, 3, 5, 10, 20];
+// const result = array.join(" ");
+// console.log(result);
 
 //__Задание 4__//
 
 // С помощью вложенных циклов создайте многомерный массив вида:
 // [[1, 1, 1], [1, 1, 1], [1, 1, 1]] .
+
+const rows = 3;
+const cols = 3;
+const array = [];
+for (let i = 0; i < rows; i++) {
+  array[i] = [];
+  for (let j = 0; j < cols; j++) {
+    array[i][j] = 1;
+  }
+}
+console.log(array);
 
 //__Задание 5__//
 
