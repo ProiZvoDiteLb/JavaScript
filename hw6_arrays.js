@@ -165,14 +165,18 @@
 // Задание 2 Дан массив: [1, 5, 4, 10, 0, 3] .
 // Найдите индекс значения 4 в этом массиве.
 
-const array = [1, 5, 4, 10, 0, 3];
-const index = array.indexOf(4);
-console.log(index);
+// const array = [1, 5, 4, 10, 0, 3];
+// const index = array.indexOf(4);
+// console.log(index);
 
 //__Задание 3__//
 
 // Дан массив чисел: [1, 3, 5, 10, 20] . С помощью метода join выведите
 // элементы массива через пробел (пустую строку ' ' ).
+
+const array = [1, 3, 5, 10, 20];
+const result = array.join(" ");
+console.log(result);
 
 //__Задание 4__//
 
