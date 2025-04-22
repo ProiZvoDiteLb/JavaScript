@@ -183,20 +183,24 @@
 // С помощью вложенных циклов создайте многомерный массив вида:
 // [[1, 1, 1], [1, 1, 1], [1, 1, 1]] .
 
-const rows = 3;
-const cols = 3;
-const array = [];
-for (let i = 0; i < rows; i++) {
-  array[i] = [];
-  for (let j = 0; j < cols; j++) {
-    array[i][j] = 1;
-  }
-}
-console.log(array);
+// const rows = 3;
+// const cols = 3;
+// const array = [];
+// for (let i = 0; i < rows; i++) {
+//   array[i] = [];
+//   for (let j = 0; j < cols; j++) {
+//     array[i][j] = 1;
+//   }
+// }
+// console.log(array);
 
 //__Задание 5__//
 
 // Дан массив: [1, 1, 1] . Добавьте в конец массива значения 2, 2, 2.
+
+const array = [1, 1, 1];
+array.push(2, 2, 2);
+console.log(array);
 
 //__Задание 6__//
 
