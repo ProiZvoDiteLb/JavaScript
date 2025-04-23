@@ -273,16 +273,22 @@
 //  Следующий элемент массива можно получить с помощью индекса: i + 1 .
 //  Обратите внимание, что у последнего элемента нет следующего.
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let i = 0; i < array.length - 1; i++) {
-  const sum = array[i] + array[i + 1];
-  console.log(sum);
-}
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < array.length - 1; i++) {
+//   const sum = array[i] + array[i + 1];
+//   console.log(sum);
+// }
 
 //__Задание 11__//
 
 // Создайте функцию, которая принимает на вход массив целых чисел,
 // а возвращает массив квадратов этих чисел.
+
+function arrayNumbers(array) {
+  return array.map((num) => num * num);
+}
+const array = [1, 2, 3, 4, 5];
+console.log(arrayNumbers(array));
 
 //__Задание 12__//
 
