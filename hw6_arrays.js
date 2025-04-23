@@ -321,15 +321,15 @@
 // необходимо вывести в консоль — это будут два массива: исходный массив и
 // массив с четными значениями.
 
-const randomArray = [];
-for (let i = 0; i < 10; i++) {
-  const random = Math.floor(Math.random() * 11); // Генерируем случайное число от 0 до 10
-  randomArray.push(random); // Добавляем случайное число в массив
-}
-const evenNumbers = randomArray.filter((num) => num % 2 === 0);
+// const randomArray = [];
+// for (let i = 0; i < 10; i++) {
+//   const random = Math.floor(Math.random() * 11); // Генерируем случайное число от 0 до 10
+//   randomArray.push(random); // Добавляем случайное число в массив
+// }
+// const evenNumbers = randomArray.filter((num) => num % 2 === 0);
 
-console.log("Исходный массив:", randomArray);
-console.log("Массив с четными значениями:", evenNumbers);
+// console.log("Исходный массив:", randomArray);
+// console.log("Массив с четными значениями:", evenNumbers);
 
 //__Задание 15__//
 
@@ -337,3 +337,13 @@ console.log("Массив с четными значениями:", evenNumbers)
 // Элементы массива необходимо сгенерировать с помощью
 // Math.random() в диапазоне от 1 до 10. Требуется найти среднее арифметическое этих цифр,
 // результат программы вывести в консоль.
+
+const array = [];
+for (let i = 0; i < 6; i++) {
+  const random = Math.floor(Math.random() * 10) + 1; // Генерируем случайное число от 1 до 10
+  array.push(random); // Добавляем случайное число в массив
+}
+const sum = array.reduce((acc, num) => acc + num, 0); // Суммируем все элементы массива acc — это аккумулятор, который накапливает сумму. num — это текущее число из массива.
+const average = sum / array.length; // Вычисляем среднее арифметическое
+console.log("Сгенерированный массив:", array);
+console.log("Среднее арифметическое:", average);
