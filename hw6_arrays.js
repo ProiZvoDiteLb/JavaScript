@@ -237,17 +237,33 @@
 // Для этого задания вам пригодится метод reverse() .
 //  Он располагает элементы массива в порядке, обратном исходному.
 
-const array = "abcdef";
-const arr = array.split(""); // Преобразуем строку в массив
-console.log(arr);
-arr.reverse(); //Реверсируем массив
-const arrReverse = arr.join(""); // Объединяем массив в строку
-console.log(arrReverse);
+// const array = "abcdef";
+// const arr = array.split(""); // Преобразуем строку в массив
+// console.log(arr);
+// arr.reverse(); //Реверсируем массив
+// const arrReverse = arr.join(""); // Объединяем массив в строку
+// console.log(arrReverse);
 
 //__Задание 9__//
 
 // Дан массив: [[1, 2, 3],[4, 5, 6]] .
 // Выведите в консоль массив вида: [1, 2, 3, 4, 5, 6] .
+
+// const array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ];
+
+// const arr = [].concat(...array); // Объединяем массивы в один
+// console.log(arr);
+
+// const array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ];
+
+// const result = array.flat();
+// console.log(result);
 
 //__Задание 10__//
 
