@@ -306,11 +306,11 @@
 // Создайте функцию, которая принимает на вход массив целых чисел,
 // а возвращает массив, содержащий только отрицательные значения.
 
-function negative(array) {
-  return array.filter((num) => num < 0); // Используем filter для получения отрицательных чисел
-}
-const array = [1, 2, -3, 4, -5, -6, 7, 8, -9];
-console.log(negative(array));
+// function negative(array) {
+//   return array.filter((num) => num < 0); // Используем filter для получения отрицательных чисел
+// }
+// const array = [1, 2, -3, 4, -5, -6, 7, 8, -9];
+// console.log(negative(array));
 
 //__Задание 14__//
 
@@ -320,6 +320,16 @@ console.log(negative(array));
 // четные значения и добавьте их в новый массив. Результат работы программы
 // необходимо вывести в консоль — это будут два массива: исходный массив и
 // массив с четными значениями.
+
+const randomArray = [];
+for (let i = 0; i < 10; i++) {
+  const random = Math.floor(Math.random() * 11); // Генерируем случайное число от 0 до 10
+  randomArray.push(random); // Добавляем случайное число в массив
+}
+const evenNumbers = randomArray.filter((num) => num % 2 === 0);
+
+console.log("Исходный массив:", randomArray);
+console.log("Массив с четными значениями:", evenNumbers);
 
 //__Задание 15__//
 
