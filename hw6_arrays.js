@@ -284,16 +284,22 @@
 // Создайте функцию, которая принимает на вход массив целых чисел,
 // а возвращает массив квадратов этих чисел.
 
-function arrayNumbers(array) {
-  return array.map((num) => num * num);
-}
-const array = [1, 2, 3, 4, 5];
-console.log(arrayNumbers(array));
+// function arrayNumbers(array) {
+//   return array.map((num) => num * num);
+// }
+// const array = [1, 2, 3, 4, 5];
+// console.log(arrayNumbers(array));
 
 //__Задание 12__//
 
 // Создайте функцию, которая принимает на вход массив строк,
 //  а возвращает массив длины слов.
+
+function str(array) {
+  return array.map((str) => str.length);
+}
+const array = ["one", "two", "three", "four", "five"];
+console.log(str(array));
 
 //__Задание 13__//
 
