@@ -295,16 +295,22 @@
 // Создайте функцию, которая принимает на вход массив строк,
 //  а возвращает массив длины слов.
 
-function str(array) {
-  return array.map((str) => str.length);
-}
-const array = ["one", "two", "three", "four", "five"];
-console.log(str(array));
+// function str(array) {
+//   return array.map((str) => str.length);
+// }
+// const array = ["one", "two", "three", "four", "five"];
+// console.log(str(array));
 
 //__Задание 13__//
 
 // Создайте функцию, которая принимает на вход массив целых чисел,
 // а возвращает массив, содержащий только отрицательные значения.
+
+function negative(array) {
+  return array.filter((num) => num < 0); // Используем filter для получения отрицательных чисел
+}
+const array = [1, 2, -3, 4, -5, -6, 7, 8, -9];
+console.log(negative(array));
 
 //__Задание 14__//
 
