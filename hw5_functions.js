@@ -15,9 +15,9 @@
 // console.log(min(6, 6));
 
 // стрелочная функция
-const min = (a, b) => (a < b ? a : b);
-console.log(min(8, 4));
-console.log(min(6, 6));
+// const min = (a, b) => (a < b ? a : b);
+// console.log(min(8, 4));
+// console.log(min(6, 6));
 
 //__Задание 2__//
 
@@ -37,6 +37,14 @@ console.log(min(6, 6));
 // console.log(CheckParity(4)); //"Число четное"
 // console.log(CheckParity(5)); //"Число не четное"
 
+// стрелочная функция
+
+// const isOdd = (number) =>
+//   number % 2 === 0 ? "Число четное" : "Число не четное";
+// console.log(isOdd(2)); //"Число четное"
+// console.log(isOdd(3)); //"Число не четное"
+// console.log(isOdd(4)); //"Число четное"
+
 //__Задание 3__//
 
 // Напишите функцию, которая принимает параметром число и выводит в
@@ -55,6 +63,11 @@ console.log(min(6, 6));
 // }
 // const result = squareNumber(4);
 // console.log(result);
+
+// стрелочная функция
+
+// const squareNumber = (number) => number ** 2;
+// console.log(squareNumber(5));
 
 //__Задание 4__//
 
