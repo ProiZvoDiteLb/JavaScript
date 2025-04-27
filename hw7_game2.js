@@ -111,6 +111,12 @@ function startQuiz() {
       `${currentQuestion.question}\n${optionsText}\nВведите номер ответа:`
     );
 
+    // Проверка на нажатие Cancel
+    if (userAnswer === null) {
+      alert("Вы вышли из игры.");
+      return; // Выход из функции, прекращение игры
+    }
+
     // Проверка на правильный ответ
     if (userAnswer && parseInt(userAnswer) === currentQuestion.correctAnswer) {
       correctCount++;
