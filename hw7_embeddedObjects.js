@@ -124,26 +124,38 @@
 // До большего целого.
 // До ближайшего целого.
 
-const num = 32.58884;
-const numMathFloor = Math.floor(num); //До меньшего целого.
-console.log(numMathFloor);
+// const num = 32.58884;
+// const numMathFloor = Math.floor(num); //До меньшего целого.
+// console.log(numMathFloor);
 
-const num1 = 32.58884;
-const numMathCeil = Math.ceil(num1); //До большего целого.
-console.log(numMathCeil);
+// const num1 = 32.58884;
+// const numMathCeil = Math.ceil(num1); //До большего целого.
+// console.log(numMathCeil);
 
-const num2 = 32.58884;
-const numMathRoundMax = Math.round(num2); //До большего целого, если десятые = или < 0,5
-console.log(numMathRoundMax);
+// const num2 = 32.58884;
+// const numMathRoundMax = Math.round(num2); //До большего целого, если десятые = или < 0,5
+// console.log(numMathRoundMax);
 
-const num3 = 32.48884; // 32.49999 Максимальное число до округления в меньшую сторону
-const numMathRoundMin = Math.round(num3); //До большего целого, если десятые > 0,5
-console.log(numMathRoundMin);
+// const num3 = 32.48884; // 32.49999 Максимальное число до округления в меньшую сторону
+// const numMathRoundMin = Math.round(num3); //До большего целого, если десятые > 0,5
+// console.log(numMathRoundMin);
 
 //__Задание 4__//
 
 // Найти минимальное и максимальное значения из чисел
 // 52, 53, 49, 77, 21, 32 и вывести их в консоль.
+
+const array = [52, 53, 49, 77, 21, 32];
+
+// Находим минимальное значение
+const numMin = Math.min(...array); // Распаковываем массив и передаем его элементы в Math.min
+
+// Находим максимальное значение
+const numMax = Math.max(...array); // Распаковываем массив и передаем его элементы в Math.max
+
+// Выводим результаты в консоль
+console.log("Минимальное значение:", numMin); // Выводит 21
+console.log("Максимальное значение:", numMax); // Выводит 77
 
 //__Задание 5__//
 
