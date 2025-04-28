@@ -161,13 +161,13 @@
 
 // Создать функцию, которая выводит в консоль случайное число от 1 до 10.
 
-function getRandomInt() {
-  const randomNumber = Math.floor(Math.random() * 10) + 1; // Генерируем случайное число от 1 до 10
-  console.log(randomNumber); // Выводим число в консоль
-}
+// function getRandomInt() {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1; // Генерируем случайное число от 1 до 10
+//   console.log(randomNumber); // Выводим число в консоль
+// }
 
-// Вызов функции
-getRandomInt();
+// // Вызов функции
+// getRandomInt();
 
 //__Задание 6__//
 
