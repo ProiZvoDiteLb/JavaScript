@@ -92,6 +92,12 @@
 
 // Преобразовать строку 'js' в верхний регистр.
 
+const answerUser = prompt(
+  "Введите ваше имя...\nP.S. преобразую в верхний регистр"
+);
+const upperCaseAnswerUser = answerUser.toUpperCase();
+alert("Привет " + upperCaseAnswerUser);
+
 //__Задание 2__//
 
 // Создать функцию, которая принимает массив строк и строку.
