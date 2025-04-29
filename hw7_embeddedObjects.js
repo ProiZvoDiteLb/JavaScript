@@ -208,14 +208,20 @@
 
 // Вывести в консоль текущую дату.
 
-let currentDate = new Date();
-alert(currentDate);
-console.log(currentDate);
+// let currentDate = new Date();
+// alert(currentDate);
+// console.log(currentDate);
 
 //__Задание 9__//
 
 // Создать переменную currentDate , хранящую текущую дату.
 // Вывести дату, которая наступит через 73 дня после текущей.
+
+let currentDate = new Date(); // Создаем переменную с текущей датой
+let futureDate = new Date(currentDate); // Копируем текущую дату в новую переменную
+futureDate.setDate(currentDate.getDate() + 73); // Добавляем 73 дня к текущей дате
+console.log(currentDate); // Выводим дату
+console.log(futureDate.toLocaleDateString("ru-RU")); // Выводим дату в формате для России
 
 //__Задание 10__//
 
