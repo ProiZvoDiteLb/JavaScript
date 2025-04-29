@@ -199,14 +199,18 @@
 
 // Создать функцию, которая принимает два целых числа и возвращает случайное число в этом диапазоне.
 
-function getNum(start, end) {
-  return Math.floor(Math.random() * (end - start + 1)) + start;
-}
-console.log(getNum(1, 6));
+// function getNum(start, end) {
+//   return Math.floor(Math.random() * (end - start + 1)) + start;
+// }
+// console.log(getNum(1, 6));
 
 //__Задание 8__//
 
 // Вывести в консоль текущую дату.
+
+let currentDate = new Date();
+alert(currentDate);
+console.log(currentDate);
 
 //__Задание 9__//
 
