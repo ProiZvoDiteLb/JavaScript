@@ -249,7 +249,7 @@
                     число от 1 до 100.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn" onclick="handleClick()">Играть!</button>
+                  <button onclick=handleClick() class="gamess__btn">Играть!</button>
 
                 </div>
               </div>
@@ -271,7 +271,7 @@
                     арифметические задачи.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn" onclick="startGame()">Играть!</button>
+                  <button onclick=startGame() class="gamess__btn">Играть!</button>
                 </div>
               </div>
             </div>
@@ -289,7 +289,7 @@
                     будет перевернут.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn">Играть!</button>
+                  <button onclick=reverseText() class="gamess__btn">Играть!</button>
                 </div>
               </div>
             </div>
@@ -307,7 +307,7 @@
                     с вариантами ответов.
                   </p>
                   <!-- <p class="gamess__btn">Играть!</p> -->
-                  <button class="gamess__btn">Играть!</button>
+                  <button onclick=startQuiz() class="gamess__btn">Играть!</button>
                 </div>
               </div>
             </div>
@@ -370,103 +370,106 @@
   <script>
     // Функция для вывода сообщения
 
-    function handleClick() {
-      const randomNumber = Math.floor(Math.random() * 100) + 1;
-      let guessed = false;
+    // function handleClick() {
+    //   const randomNumber = Math.floor(Math.random() * 100) + 1;
+    //   let guessed = false;
 
-      while (!guessed) {
-        const input = prompt("Угадай число от 1 до 100 или нажмите 'Отмена' для выхода");
+    //   while (!guessed) {
+    //     const input = prompt("Угадай число от 1 до 100 или нажмите 'Отмена' для выхода");
 
-        if (input === null) {
-          alert("Игра остановлена.");
-          break;
-        }
+    //     if (input === null) {
+    //       alert("Игра остановлена.");
+    //       break;
+    //     }
 
-        const number = Number(input);
+    //     const number = Number(input);
 
-        if (isNaN(number) || number < 1 || number > 100) {
-          alert("Вы ввели не число или число вне диапазона");
-          continue;
-        }
+    //     if (isNaN(number) || number < 1 || number > 100) {
+    //       alert("Вы ввели не число или число вне диапазона");
+    //       continue;
+    //     }
 
-        switch (true) {
-          case number === randomNumber:
-            alert("Вы угадали! Игра окончена.");
-            guessed = true;
-            break;
-          case number < randomNumber:
-            alert("Ваше число меньше загаданного");
-            break;
-          case number > randomNumber:
-            alert("Ваше число больше загаданного");
-            break;
-        }
-      }
-    }
+    //     switch (true) {
+    //       case number === randomNumber:
+    //         alert("Вы угадали! Игра окончена.");
+    //         guessed = true;
+    //         break;
+    //       case number < randomNumber:
+    //         alert("Ваше число меньше загаданного");
+    //         break;
+    //       case number > randomNumber:
+    //         alert("Ваше число больше загаданного");
+    //         break;
+    //     }
+    //   }
+    // }
 
-    function simpleArithmetic() {
-      const min = 0;
-      const max = 100;
-      const operator = ['+', '-', '*', '/'];
+    // function simpleArithmetic() {
+    //   const min = 0;
+    //   const max = 100;
+    //   const operator = ['+', '-', '*', '/'];
 
-      const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
-      const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
-      const op = operator[Math.floor(Math.random() * operator.length)];
+    //   const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
+    //   const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
+    //   const op = operator[Math.floor(Math.random() * operator.length)];
 
-      let task, answer;
+    //   let task, answer;
 
-      switch (op) {
-        case '+':
-          task = `${num1} + ${num2}`;
-          answer = num1 + num2;
+    //   switch (op) {
+    //     case '+':
+    //       task = `${num1} + ${num2}`;
+    //       answer = num1 + num2;
 
-          break;
-        case '-':
-          task = `${num1} - ${num2}`;
-          answer = num1 - num2;
-          break;
-        case '*':
-          task = `${num1} * ${num2}`;
-          answer = num1 * num2;
-          break;
-        case '/':
-          if (num2 === 0) {
-            num2 = 1; // Если делитель 0, заменим его на 1
-          }
+    //       break;
+    //     case '-':
+    //       task = `${num1} - ${num2}`;
+    //       answer = num1 - num2;
+    //       break;
+    //     case '*':
+    //       task = `${num1} * ${num2}`;
+    //       answer = num1 * num2;
+    //       break;
+    //     case '/':
+    //       if (num2 === 0) {
+    //         num2 = 1; // Если делитель 0, заменим его на 1
+    //       }
 
-          task = `${num1} / ${num2}`;
-          answer = num1 / num2;
-          break;
-      }
+    //       task = `${num1} / ${num2}`;
+    //       answer = num1 / num2;
+    //       break;
+    //   }
 
-      return { task, answer };
-    }
+    //   return { task, answer };
+    // }
 
-    function startGame() {
+    // function startGame() {
 
-      let keepPlaying = true;
+    //   let keepPlaying = true;
 
-      while (keepPlaying) {
-        const { task, answer } = simpleArithmetic();
+    //   while (keepPlaying) {
+    //     const { task, answer } = simpleArithmetic();
 
-        const userResponse = prompt(`Решите задачу: ${task}\nВведите ваш ответ или нажмите Отмена (Cancel), чтобы выйти:`);
+    //     const userResponse = prompt(`Решите задачу: ${task}\nВведите ваш ответ или нажмите Отмена (Cancel), чтобы выйти:`);
 
-        // Проверка на нажатие Cancel
-        if (userResponse === null) {
-          keepPlaying = false; // Завершаем цикл, если пользователь нажал Cancel
-          alert("Вы вышли из игры.");
-        } else {
-          const userAnswer = Number(userResponse); // Преобразуем ответ в число
+    //     // Проверка на нажатие Cancel
+    //     if (userResponse === null) {
+    //       keepPlaying = false; // Завершаем цикл, если пользователь нажал Cancel
+    //       alert("Вы вышли из игры.");
+    //     } else {
+    //       const userAnswer = Number(userResponse); // Преобразуем ответ в число
 
-          if (userAnswer === answer) {
-            alert('Правильно!');
-          } else {
-            alert(`Неправильно! Правильный ответ: ${answer}`);
-          }
-        }
-      }
-    }
-
+    //       if (userAnswer === answer) {
+    //         alert('Правильно!');
+    //       } else {
+    //         alert(`Неправильно! Правильный ответ: ${answer}`);
+    //       }
+    //     }
+    //   }
+    // }
   </script>
+  <script src="./hw5_game.js"></script>
+  <script src="./hw6_game.js"></script>
+  <script src="./hw7_game1.js"></script>
+  <script src="./hw7_game2.js"></script>
 </body>
 </html>
