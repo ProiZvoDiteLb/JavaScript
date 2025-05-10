@@ -69,6 +69,16 @@ array.forEach((color) => {
 });
 console.log(result); // Выводим массив результатов
 
+/////////////////////////////////////////////////////////
+
+//Из урока по проверке
+
+function filter(arr, str) {
+  const lowerStr = str.toLowerCase();
+  return arr.filter((item) => item.toLowerCase().startsWith(lowerStr));
+}
+console.log(filter(["JavaScript", "Java", "Python"], "ja"));
+
 //__Задание 3__//
 
 // Округлить число 32.58884:
@@ -106,6 +116,9 @@ const numMax = Math.max(...arrayNum); // Распаковываем массив
 console.log("Минимальное значение:", numMin); // Выводит 21
 console.log("Максимальное значение:", numMax); // Выводит 77
 
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
+
 //__Задание 5__//
 
 // Создать функцию, которая выводит в консоль случайное число от 1 до 10.
@@ -141,6 +154,17 @@ function getRandomInt(num) {
 // Пример использования функции
 const randomArray = getRandomInt(12); //Переданное число, относительно которого длина массива будет в два раза меньше
 console.log(randomArray); // Выводим массив случайных чисел
+
+/////////////////////////////////////////////////////////
+
+//Из урока по проверке
+
+function getRandomNumber(num) {
+  return Array.from({ length: Math.floor(num / 2) }, () =>
+    Math.floor(Math.random() * num)
+  );
+}
+console.log(getRandomNumber(10));
 
 //__Задание 7__//
 
