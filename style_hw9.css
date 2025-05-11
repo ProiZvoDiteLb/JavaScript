@@ -4,7 +4,8 @@
 }
 
 .openClosed,
-.color {
+.color,
+.changingText {
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -13,12 +14,14 @@
 }
 
 .openClosed__btn,
-.color__btn {
+.color__btn,
+.changingText__btn {
   width: fit-content; /* Кнопка будет иметь ширину по содержимому */
 }
 
 .openClosed__btn,
 .color__p,
-.color__btn {
+.color__btn,
+.changingText__btn {
   font-size: 25px;
 }
