@@ -3,14 +3,22 @@
   padding: 0;
 }
 
-.openClosed {
+.openClosed,
+.color {
   display: flex;
   flex-direction: column;
   padding: 50px;
   gap: 20px;
-  align-items: center;
+  align-items: center; /* Центрирование содержимого по горизонтали */
 }
 
-.openClosed_btn {
-  width: fit-content;
+.openClosed__btn,
+.color__btn {
+  width: fit-content; /* Кнопка будет иметь ширину по содержимому */
+}
+
+.openClosed__btn,
+.color__p,
+.color__btn {
+  font-size: 25px;
 }

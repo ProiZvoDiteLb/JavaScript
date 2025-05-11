@@ -28,9 +28,56 @@ addEventListener() - button.addEventListener('click', function() {
    // ... Код, который будет выполнен при клике на кнопку
 });
 */
+/*
+//__Задание 1__//
 
-const openClosed_h1El = document.querySelector(".openClosed_h1");
-const openClosed_btnEl = document.querySelector(".openClosed_btn");
+ Скрытие и показ текста Задача: cоздайте кнопку,
+  которая будет скрывать и показывать текст в заголовке < h1 > .
+  Инструкция: В HTML создайте заголовок < h1 > с текстом и кнопку.
+  Используйте метод querySelector для получения ссылок на заголовок и кнопку.
+  Используйте событие click и метод addEventListener, чтобы скрывать и показывать заголовок
+   при нажатии на кнопку.Как должно работать: нажатие на кнопку «Скрыть» скрывает текст заголовка.
+   Повторное нажатие показывает текст снова.
+*/
 
-console.log(openClosed_h1El);
-console.log(openClosed_btnEl);
+const openClosed__h1El = document.querySelector(".openClosed__h1");
+const openClosed__btnEl = document.querySelector(".openClosed__btn");
+openClosed__btnEl.addEventListener("click", function (e) {
+  if (openClosed__h1El.style.display === "none") {
+    openClosed__h1El.style.display = "block";
+  } else {
+    openClosed__h1El.style.display = "none";
+  }
+});
+
+/*
+//__Задание 2__//
+
+  Изменение стиля элемента Задача: создайте кнопку,
+  которая изменяет цвет текста в элементе < p > .Инструкция:
+   В HTML создайте абзац < p > и кнопку.Используйте метод querySelector 
+   для получения ссылки на абзац и кнопку.Используйте событие click и метод addEventListener,
+  чтобы изменить стиль элемента, например его цвет.Как должно работать: 
+  нажатие на кнопку «Изменить цвет» делает текст абзаца синим.
+  */
+
+const color__pEl = document.querySelector(".color__p");
+const color__btnEl = document.querySelector(".color__btn");
+
+color__btnEl.addEventListener("click", function (e) {
+  if (color__pEl.style.color === "blue") {
+    color__pEl.style.color = "";
+  } else {
+    color__pEl.style.color = "blue";
+  }
+});
+
+//__Задание 3__//
+
+//__Задание 4__//
+
+//__Задание 5__//
+
+//__Задание 6__//
+
+//__Задание 7__//
