@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.openClosed {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: center;
+}
+
+.openClosed_btn {
+  width: fit-content;
+}
