@@ -22,6 +22,20 @@
 .openClosed__btn,
 .color__p,
 .color__btn,
-.changingText__btn {
+.changingText__btn,
+.discription__btn {
   font-size: 25px;
+}
+.container,
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discription {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
 }

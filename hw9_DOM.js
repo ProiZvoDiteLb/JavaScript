@@ -94,7 +94,27 @@ changingText__btnEl.addEventListener("click", function (e) {
   }
 });
 
+/*
 //__Задание 4__//
+
+Поиск и изменение элементов по классу Задача: 
+найдите все элементы с классом description и измените их текст
+на «Измененный текст».Инструкция: В HTML создайте несколько элементов 
+с классом description.Используйте метод querySelectorAll для поиска
+ всех элементов с этим классом.Переберите найденные элементы и 
+ измените их текстовое содержимое с помощью свойства textContent.
+ Как должно работать: после выполнения скрипта все элементы с классом 
+ description изменяют свой текст на «Измененный текст».
+ */
+
+const descriptionEl = document.querySelectorAll(".discription"); // Находим все элементы с классом description
+const discription_btnEl = document.querySelector(".discription__btn");
+
+discription_btnEl.addEventListener("click", function (e) {
+  descriptionEl.forEach(function (element) {
+    element.textContent = "Измененный текст"; // Изменяем текст каждого элемента
+  });
+});
 
 //__Задание 5__//
 
