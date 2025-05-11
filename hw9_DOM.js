@@ -1,7 +1,5 @@
-/*
-DOM(Document Object Model) — это объектная модель документа. 
-Она представляет HTML - документ как дерево объектов.
-*/
+// DOM(Document Object Model) — это объектная модель документа.
+// Она представляет HTML - документ как дерево объектов.
 
 /*
 Методы доступа к элементам DOM
@@ -31,4 +29,8 @@ addEventListener() - button.addEventListener('click', function() {
 });
 */
 
-document.querySelector("");
+const openClosed_h1El = document.querySelector(".openClosed_h1");
+const openClosed_btnEl = document.querySelector(".openClosed_btn");
+
+console.log(openClosed_h1El);
+console.log(openClosed_btnEl);
