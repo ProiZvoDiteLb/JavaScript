@@ -23,7 +23,8 @@
 .color__p,
 .color__btn,
 .changingText__btn,
-.discription__btn {
+.discription__btn,
+.discription__btn1 {
   font-size: 25px;
 }
 .container,
@@ -34,8 +35,12 @@
   justify-content: center;
 }
 
-.discription {
+.discription,
+.discription1 {
   font-size: 20px;
   text-align: center;
   margin: 10px;
+}
+.conteiner {
+  padding-bottom: 40px;
 }
