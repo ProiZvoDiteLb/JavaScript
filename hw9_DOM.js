@@ -162,4 +162,23 @@ changingText__btn1El.addEventListener("click", function (e) {
   newParagraph.classList.add("changingTexts__p");
   document.body.appendChild(newParagraph);
 });
+
+/*
 //__Задание 7__//
+  Удаление элемента Задача: 
+  создайте кнопку, которая удаляет первый элемент < p >
+  с классом description2.Инструкция: В HTML создайте несколько абзацев < p > ,
+  некоторые из них должны иметь класс description.
+  Используйте метод querySelector для поиска первого элемента 
+  с классом description.Используйте метод remove для удаления этого элемента 
+  при нажатии на кнопку.Как должно работать: нажатие на кнопку «Удалить элемент» 
+  удаляет первый абзац с классом description со страницы.
+  */
+
+const discription2El = document.querySelector(".discription2");
+const discription__btn2El = document.querySelector(".discription__btn2");
+
+discription__btn2El.addEventListener("click", function (e) {
+  const discription2El = document.querySelector(".discription2");
+  discription2El.remove();
+});

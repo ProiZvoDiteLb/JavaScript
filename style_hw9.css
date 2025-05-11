@@ -26,7 +26,10 @@
 .changingText__btn,
 .discription__btn,
 .discription__btn1,
-.changingText__btn1 {
+.changingText__btn1,
+.discription2,
+.other,
+.discription__btn2 {
   font-size: 25px;
 }
 .container,
@@ -52,4 +55,10 @@
   justify-content: center;
   font-size: 25px;
   margin: 10px;
+}
+.discription2,
+.other {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
 }
