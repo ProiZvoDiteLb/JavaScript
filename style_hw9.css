@@ -5,7 +5,8 @@
 
 .openClosed,
 .color,
-.changingText {
+.changingText,
+.changingTexts {
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -24,7 +25,8 @@
 .color__btn,
 .changingText__btn,
 .discription__btn,
-.discription__btn1 {
+.discription__btn1,
+.changingText__btn1 {
   font-size: 25px;
 }
 .container,
@@ -43,4 +45,11 @@
 }
 .conteiner {
   padding-bottom: 40px;
+}
+
+.changingTexts__p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 10px;
 }

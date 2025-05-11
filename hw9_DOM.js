@@ -1,6 +1,8 @@
 // DOM(Document Object Model) — это объектная модель документа.
 // Она представляет HTML - документ как дерево объектов.
 
+// const { createElement } = require("react");
+
 /*
 Методы доступа к элементам DOM
 
@@ -141,6 +143,23 @@ discription__btn1El.addEventListener("click", function (e) {
   });
 });
 
+/*
 //__Задание 6__//
 
+  Добавление нового элемента в DOM Задача: 
+  создайте кнопку, которая добавляет новый элемент < p >
+  с текстом в конец документа.Инструкция: В HTML создайте кнопку.
+  Используйте метод createElement для создания нового элемента.
+  Используйте appendChild для добавления нового элемента в конец документа
+  при нажатии на кнопку.Как должно работать: нажатие на кнопку «Добавить элемент» 
+  добавляет в конец страницы новый абзац с текстом «Новый абзац».
+ */
+
+const changingText__btn1El = document.querySelector(".changingText__btn1");
+changingText__btn1El.addEventListener("click", function (e) {
+  const newParagraph = document.createElement("p");
+  newParagraph.textContent = "Новый абзац";
+  newParagraph.classList.add("changingTexts__p");
+  document.body.appendChild(newParagraph);
+});
 //__Задание 7__//
