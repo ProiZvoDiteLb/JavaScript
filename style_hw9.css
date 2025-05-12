@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.openClosed,
+.color,
+.changingText,
+.changingTexts {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  align-items: center; /* Центрирование содержимого по горизонтали */
+}
+
+.openClosed__btn,
+.color__btn,
+.changingText__btn {
+  width: fit-content; /* Кнопка будет иметь ширину по содержимому */
+}
+
+.openClosed__btn,
+.color__p,
+.color__btn,
+.changingText__btn,
+.discription__btn,
+.discription__btn1,
+.changingText__btn1,
+.discription2,
+.other,
+.discription__btn2 {
+  font-size: 25px;
+}
+.container,
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discription,
+.discription1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.conteiner {
+  padding-bottom: 40px;
+}
+
+.changingTexts__p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 10px;
+}
+.discription2,
+.other {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}

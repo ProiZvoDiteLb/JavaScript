@@ -98,7 +98,7 @@ const people = [
   { name: "Оксана", age: 47 },
 ];
 function compareNumbers(a, b) {
-  return a - b;
+  return a.age - b.age;
 }
 
 // Допишите колбэк для sort, изучите, как работает колбэк, в документации
@@ -107,6 +107,16 @@ console.log(
     return a.age - b.age;
   })
 );
+
+/////Стрелочная функция
+// console.log(
+//   people.sort( (a, b) => {
+//     return a.age - b.age;
+//   })
+// );
+
+// console.log(people.sort(compareNumbers));
+
 // код выше должен вывеcти =>
 // [
 //  { name: 'Олег', age: 7 },
