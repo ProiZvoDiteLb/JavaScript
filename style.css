@@ -68,6 +68,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.9s, color 0.9s, border 0.9s;
+}
+.section__link_desktop:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition-duration: 0.9s;
+  border: solid 1px black;
 }
 .section__topback {
   display: flex;
@@ -318,6 +325,7 @@ a {
   align-items: center;
   border: none;
   box-sizing: border-box;
+  transition: background-color 0.9s, color 0.9s, border 0.9s;
 }
 .gamess__btn:hover {
   border: solid 0.5mm #000000;
