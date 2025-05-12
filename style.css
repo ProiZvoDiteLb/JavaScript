@@ -144,9 +144,6 @@ span {
   display: flex;
   align-items: center;
 }
-.sections__heading_position {
-  padding-bottom: 70px;
-}
 .sections__starHeading {
   position: absolute;
   right: 0;
@@ -250,6 +247,9 @@ a {
   line-height: 129%;
 }
 
+.gamess {
+  padding-top: 70px;
+}
 .gamess__color {
   display: flex;
   flex-direction: row-reverse;
@@ -507,11 +507,11 @@ a {
   .sections__heading {
     font-size: 40px;
   }
-  .sections__heading_position {
-    padding-bottom: 32px;
-  }
   .cart {
     display: none;
+  }
+  .gamess {
+    padding-top: 35px;
   }
   .gamess__color {
     display: flex;

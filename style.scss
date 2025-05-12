@@ -166,9 +166,9 @@ span {
     display: flex;
     align-items: center;
   }
-  &__heading_position {
-    padding-bottom: 70px;
-  }
+  // &__heading_position {
+  //   padding-bottom: 70px;
+  // }
   &__starHeading {
     position: absolute;
     right: 0;
@@ -279,6 +279,8 @@ a {
 //   padding-top: 72px;
 // }
 .gamess {
+  padding-top: 70px;
+
   &__color {
     display: flex;
     flex-direction: row-reverse;
