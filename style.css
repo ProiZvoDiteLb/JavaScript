@@ -393,23 +393,44 @@ a {
     bottom: -90px;
   }
 }
-@media (min-width: 768px) and (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 324px);
+    padding-right: calc(50% - 324px);
+  }
+  .header {
+    height: 70px;
+  }
+  .name {
+    font-size: 23px;
+  }
+  .section {
+    padding-top: 170px;
   }
   .section__topback {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: -25px;
-    max-width: 40%;
+    max-width: 30%;
+  }
+  .section__heading {
+    font-size: 54px;
+    line-height: 100%;
+  }
+  .sections__paragraph {
+    font-size: 20px;
   }
   .section__starLeft {
+    top: 40px;
     transition: transform 1s ease;
+  }
+  .section__starRight:hover {
+    transform: rotate(360deg); /* Вращение на 360 градусов */
   }
   .section__starLeft:hover {
     transform: rotate(-360deg); /* Вращение на 360 градусов */
+  }
+  .section__link {
+    font-size: 20px;
+    width: 230px;
+    height: 55px;
   }
   .section__starRight {
     position: absolute;
@@ -417,18 +438,39 @@ a {
     bottom: 30px;
     transition: transform 1s ease;
   }
-  .section__starRight:hover {
-    transform: rotate(360deg); /* Вращение на 360 градусов */
+  .sections__games {
+    padding-top: 70px;
+  }
+  .sections__heading {
+    font-size: 52px;
   }
   .sections__starHeadingRight {
-    position: absolute;
-    top: 100px;
-    padding-left: calc(1% + 630px);
+    padding-left: calc(1% + 560px);
+  }
+  .games {
+    width: 308px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .gamess__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+  }
+  .gamess__paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 438px;
+  }
+  .gamess__position,
+  .gamess__positions {
+    padding: 30px;
   }
   .sections__starHeadingFooter {
-    position: absolute;
-    padding-left: calc(1% + 630px);
-    bottom: -80px;
+    padding-left: calc(1% + 560px);
   }
 }
 @media (max-width: 767px) {
