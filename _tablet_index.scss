@@ -4,38 +4,42 @@
     padding-right: calc(50% - 786px / 2);
   }
 
-  .section__topback {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: -25px;
-    max-width: 40%;
-  }
-  .section__starLeft {
-    transition: transform 1s ease;
-  }
-  .section__starLeft:hover {
-    transform: rotate(-360deg); /* Вращение на 360 градусов */
-  }
-  .section__starRight {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    transition: transform 1s ease;
-  }
-  .section__starRight:hover {
-    transform: rotate(360deg); /* Вращение на 360 градусов */
+  .section {
+    &__topback {
+      display: flex;
+      position: absolute;
+      top: 0px;
+      right: -25px;
+      max-width: 40%;
+    }
+    &__starLeft {
+      transition: transform 1s ease;
+    }
+    &__starLeft:hover {
+      transform: rotate(-360deg); /* Вращение на 360 градусов */
+    }
+    &__starRight {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      transition: transform 1s ease;
+    }
+    &__starRight:hover {
+      transform: rotate(360deg); /* Вращение на 360 градусов */
+    }
   }
 
-  .sections__starHeadingRight {
-    position: absolute;
-    top: 120px;
-    padding-left: calc(1% + 650px);
-  }
-  .sections__starHeadingFooter {
-    position: absolute;
-    padding-left: calc(1% + 650px);
-    bottom: -90px;
+  .sections {
+    &__starHeadingRight {
+      position: absolute;
+      top: 120px;
+      padding-left: calc(1% + 650px);
+    }
+    &__starHeadingFooter {
+      position: absolute;
+      padding-left: calc(1% + 650px);
+      bottom: -90px;
+    }
   }
 }
 
@@ -53,49 +57,58 @@
 
   .section {
     padding-top: 170px;
-  }
-  .section__topback {
-    max-width: 30%;
-  }
-  .section__heading {
-    font-size: 54px;
-    line-height: 100%;
-  }
-  .sections__paragraph {
-    font-size: 20px;
+
+    &__topback {
+      max-width: 30%;
+    }
+    &__heading {
+      font-size: 54px;
+      line-height: 100%;
+    }
+
+    &__starLeft {
+      top: 40px;
+      transition: transform 1s ease;
+    }
+    &__starRight:hover {
+      transform: rotate(360deg); /* Вращение на 360 градусов */
+    }
+
+    &__starLeft:hover {
+      transform: rotate(-360deg); /* Вращение на 360 градусов */
+    }
+    &__link {
+      font-size: 20px;
+      width: 230px;
+      height: 55px;
+    }
+    &__starRight {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      transition: transform 1s ease;
+    }
   }
 
-  .section__starLeft {
-    top: 40px;
-    transition: transform 1s ease;
-  }
-  .section__starRight:hover {
-    transform: rotate(360deg); /* Вращение на 360 градусов */
+  .sections {
+    &__paragraph {
+      font-size: 20px;
+    }
+
+    &__games {
+      padding-top: 70px;
+    }
+    &__heading {
+      font-size: 52px;
+    }
+    &__starHeadingRight {
+      padding-left: calc(1% + 560px);
+    }
+    &__starHeadingFooter {
+      padding-left: calc(1% + 560px);
+    }
   }
 
-  .section__starLeft:hover {
-    transform: rotate(-360deg); /* Вращение на 360 градусов */
-  }
-  .section__link {
-    font-size: 20px;
-    width: 230px;
-    height: 55px;
-  }
-  .section__starRight {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    transition: transform 1s ease;
-  }
-  .sections__games {
-    padding-top: 70px;
-  }
-  .sections__heading {
-    font-size: 52px;
-  }
-  .sections__starHeadingRight {
-    padding-left: calc(1% + 560px);
-  }
   .games {
     width: 308px;
   }
@@ -103,24 +116,23 @@
   .row {
     flex-direction: row;
   }
-  .gamess__title {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 100%;
-  }
-  .gamess__paragraph {
-    font-weight: 400;
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-width: 438px;
-  }
-  .gamess__position,
-  .gamess__positions {
-    padding: 30px;
-  }
 
-  .sections__starHeadingFooter {
-    padding-left: calc(1% + 560px);
+  .gamess {
+    &__title {
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 100%;
+    }
+    &__paragraph {
+      font-weight: 400;
+      font-size: 18px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      max-width: 438px;
+    }
+    &__position,
+    &__positions {
+      padding: 30px;
+    }
   }
 }
