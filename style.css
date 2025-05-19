@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -64,6 +68,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.9s, color 0.9s, border 0.9s;
+}
+.section__link_desktop:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition-duration: 0.9s;
+  border: solid 1px black;
 }
 .section__topback {
   display: flex;
@@ -143,9 +154,6 @@ span {
   height: 78px;
   display: flex;
   align-items: center;
-}
-.sections__heading_position {
-  padding-bottom: 70px;
 }
 .sections__starHeading {
   position: absolute;
@@ -250,6 +258,9 @@ a {
   line-height: 129%;
 }
 
+.gamess {
+  padding-top: 70px;
+}
 .gamess__color {
   display: flex;
   flex-direction: row-reverse;
@@ -314,6 +325,7 @@ a {
   align-items: center;
   border: none;
   box-sizing: border-box;
+  transition: background-color 0.9s, color 0.9s, border 0.9s;
 }
 .gamess__btn:hover {
   border: solid 0.5mm #000000;
@@ -381,23 +393,41 @@ a {
     bottom: -90px;
   }
 }
-@media (min-width: 768px) and (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 324px);
+    padding-right: calc(50% - 324px);
+  }
+  .header {
+    height: 70px;
+  }
+  .name {
+    font-size: 23px;
+  }
+  .section {
+    padding-top: 170px;
   }
   .section__topback {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    right: -25px;
-    max-width: 40%;
+    max-width: 30%;
+  }
+  .section__heading {
+    font-size: 54px;
+    line-height: 100%;
   }
   .section__starLeft {
+    top: 40px;
     transition: transform 1s ease;
+  }
+  .section__starRight:hover {
+    transform: rotate(360deg); /* Вращение на 360 градусов */
   }
   .section__starLeft:hover {
     transform: rotate(-360deg); /* Вращение на 360 градусов */
+  }
+  .section__link {
+    font-size: 20px;
+    width: 230px;
+    height: 55px;
   }
   .section__starRight {
     position: absolute;
@@ -405,18 +435,41 @@ a {
     bottom: 30px;
     transition: transform 1s ease;
   }
-  .section__starRight:hover {
-    transform: rotate(360deg); /* Вращение на 360 градусов */
+  .sections__paragraph {
+    font-size: 20px;
+  }
+  .sections__games {
+    padding-top: 70px;
+  }
+  .sections__heading {
+    font-size: 52px;
   }
   .sections__starHeadingRight {
-    position: absolute;
-    top: 100px;
-    padding-left: calc(1% + 630px);
+    padding-left: calc(1% + 560px);
   }
   .sections__starHeadingFooter {
-    position: absolute;
-    padding-left: calc(1% + 630px);
-    bottom: -80px;
+    padding-left: calc(1% + 560px);
+  }
+  .games {
+    width: 308px;
+  }
+  .row {
+    flex-direction: row;
+  }
+  .gamess__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+  }
+  .gamess__paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 438px;
+  }
+  .gamess__position, .gamess__positions {
+    padding: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -507,11 +560,11 @@ a {
   .sections__heading {
     font-size: 40px;
   }
-  .sections__heading_position {
-    padding-bottom: 32px;
-  }
   .cart {
     display: none;
+  }
+  .gamess {
+    padding-top: 35px;
   }
   .gamess__color {
     display: flex;

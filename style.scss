@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -67,18 +71,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.9s, color 0.9s, border 0.9s;
   }
+
   // &__btn:hover {
   //   background-color: rgb(255, 255, 255);
   //   color: black;
   //   transition-duration: 0.9s;
   // }
 
-  // &__link:hover {
-  //   background-color: rgb(255, 255, 255);
-  //   color: black;
-  //   transition-duration: 0.9s;
-  // }
+  &__link_desktop:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition-duration: 0.9s;
+    border: solid 1px black;
+  }
 
   &__topback {
     display: flex;
@@ -166,9 +173,9 @@ span {
     display: flex;
     align-items: center;
   }
-  &__heading_position {
-    padding-bottom: 70px;
-  }
+  // &__heading_position {
+  //   padding-bottom: 70px;
+  // }
   &__starHeading {
     position: absolute;
     right: 0;
@@ -279,6 +286,8 @@ a {
 //   padding-top: 72px;
 // }
 .gamess {
+  padding-top: 70px;
+
   &__color {
     display: flex;
     flex-direction: row-reverse;
@@ -344,6 +353,7 @@ a {
     align-items: center;
     border: none;
     box-sizing: border-box;
+    transition: background-color 0.9s, color 0.9s, border 0.9s;
   }
   &__btn:hover {
     border: solid 0.5mm #000000;
@@ -370,6 +380,7 @@ a {
     background-color: #bded35;
   }
 }
+
 @media (min-width: 768px) {
   .section__link_mobile {
     display: none;
